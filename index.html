@@ -10,7 +10,7 @@
 
 <body>
     <section class="container">
-        <form>
+        <form onsubmit="gestionDuFormulaire(event)">
             <div class="row">
                 <div class="mb-3 col">
                     <label for="firstNumber" class="firstNumber">Fisrt number</label>
@@ -22,11 +22,10 @@
                 </div>
             </div>
             <div class="mb-3">
-                <select name="operations" id="operations" class="form-select">
-                    <option value="">Selection</option>
-                    <option value="">Addition</option>
-                    <option value="">Division</option>
-                    <option value="">Produit</option>
+                <select name="operation" id="operation" class="form-select">
+                    <option>Selection</option>
+                    <option value="1">Addition</option>
+                    <option value="2">Produit</option>
                 </select>
             </div>
             <div class="d-grid gap-2 mb-3">
@@ -35,6 +34,7 @@
         </form>
         <p id="resultat"></p>
     </section>
+    <script src="scripts/calculatrice.js" type="text/javascript"></script>
 </body>
 
 </html>
